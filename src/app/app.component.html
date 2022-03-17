@@ -39,7 +39,7 @@
 
 <button (click)="displayMode = displayMode === 'flex' ? 'none' : 'flex'">toggle</button>
 
-<div [ngStyle]="{
+<!-- <div [ngStyle]="{
   display: displayMode,
   width: '200px',
   height: '200px',
@@ -48,4 +48,20 @@
   marginTop: '.5rem'
 }">
 
-</div>
+</div> -->
+
+<button (click)="isRed = !isRed">toggle bg</button>
+
+<p [ngClass]="{
+  red: isRed,
+  blue: !isRed
+}">
+  satoroperatenet
+</p>
+
+<p 
+  [class.blue]="isRed"
+  [class.red]="!isRed"
+>
+  areporotas
+</p>
