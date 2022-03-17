@@ -52,7 +52,7 @@
 
 <button (click)="isRed = !isRed">toggle bg</button>
 
-<p [ngClass]="{
+<!-- <p [ngClass]="{
   red: isRed,
   blue: !isRed
 }">
@@ -64,4 +64,10 @@
   [class.red]="!isRed"
 >
   areporotas
-</p>
+</p> -->
+
+<p *ngIf="isRed; else blueP" class="red">Lorem ipsum dolor sit amet.</p>
+
+<ng-template #blueP>
+  <p class="blue">Lorem ipsum dolor sit amet consectetur.</p>
+</ng-template>
