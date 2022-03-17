@@ -1,8 +1,11 @@
-<h1 [ngStyle]="{
+<h1>
+  Salut
+</h1>
+<!-- <h1 [ngStyle]="{
   background: displayMode === 'flex' ? 'white' : 'red'
 }">
   Salut
-</h1>
+</h1> -->
 
 <!-- <p>{{ title }}</p>
 <p><strong>{{ number - 2 }}</strong></p>
@@ -37,7 +40,7 @@
 
 <input type="text" [(ngModel)]="article"> -->
 
-<button (click)="displayMode = displayMode === 'flex' ? 'none' : 'flex'">toggle</button>
+<!-- <button (click)="displayMode = displayMode === 'flex' ? 'none' : 'flex'">toggle</button> -->
 
 <!-- <div [ngStyle]="{
   display: displayMode,
@@ -50,7 +53,7 @@
 
 </div> -->
 
-<button (click)="isRed = !isRed">toggle bg</button>
+<!-- <button (click)="isRed = !isRed">toggle bg</button> -->
 
 <!-- <p [ngClass]="{
   red: isRed,
@@ -72,10 +75,27 @@
   <p class="blue">Lorem ipsum dolor sit amet consectetur.</p>
 </ng-template> -->
 
-<button (click)="isRed = null">Set default</button>
+<!-- <button (click)="isRed = null">Set default</button> -->
 
-<div [ngSwitch]="isRed">
+<!-- <div [ngSwitch]="isRed">
   <p *ngSwitchCase="true" class="red">Lorem, ipsum dolor.</p>
   <p *ngSwitchCase="false" class="blue">Lorem ipsum dolor sit.</p>
   <p *ngSwitchDefault=""></p>
-</div>
+</div> -->
+
+<!-- <ul style="list-style: none;">
+  <li *ngFor="let item of arr; let idx = index">
+    {{idx + 1}} <strong>{{item}}</strong>
+  </li>
+</ul> -->
+
+<ul style="list-style: none;">
+  <li *ngFor="let post of objs; let idx = index">
+    <p>{{post.title}} <b>{{post.author}}</b></p>
+    <ul>
+      <li *ngFor="let comment of post.comments; let i  = index">
+        {{i + 1}} <i>{{comment.name}} {{comment.text}}</i>
+      </li>
+    </ul>
+  </li>
+</ul>
