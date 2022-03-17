@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Dynamic value';
-  article = "Initial article";
+  // title = 'Dynamic value';
+  // article = "Initial article";
 
   // number = 42;
 
@@ -24,29 +24,31 @@ export class AppComponent {
 
   // imgVue = 'https://masteringjs.io/assets/images/vue/vue-transparent.png';
 
-  inputValue = '';
+  // inputValue = '';
 
-  constructor() {
+  // constructor() {
     // setTimeout(() => {
     //   console.log('Reac time is over');
       
     //   this.imgReact = this.imgVue;
     // }, 5000);
-  }
+  // }
 
-  onInput(e: Event) {
-    this.inputValue = (<HTMLInputElement>e.target).value;
-  }
+  // onInput(e: Event) {
+  //   this.inputValue = (<HTMLInputElement>e.target).value;
+  // }
 
-  onClick() {
-    console.log('Clack');
-  }
+  // onClick() {
+  //   console.log('Clack');
+  // }
 
-  onBlur(str: string) {
-    this.inputValue = str;
-  }
+  // onBlur(str: string) {
+  //   this.inputValue = str;
+  // }
 
-  onInputTitle(e: Event) {
-    this.title = (<HTMLInputElement>e.target).value;
-  }
+  // onInputTitle(e: Event) {
+  //   this.title = (<HTMLInputElement>e.target).value;
+  // }
+
+  displayMode = 'flex';
 }

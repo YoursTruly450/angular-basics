@@ -1,4 +1,8 @@
-<h1>Salut</h1>
+<h1 [ngStyle]="{
+  background: displayMode === 'flex' ? 'white' : 'red'
+}">
+  Salut
+</h1>
 
 <!-- <p>{{ title }}</p>
 <p><strong>{{ number - 2 }}</strong></p>
@@ -7,7 +11,7 @@
 <p><strong>{{ 'obj.b' }}</strong></p> -->
 
 <!-- <img [src]="imgReact" alt="React logo"> -->
-<button (click)="onClick()">Click</button>
+<!-- <button (click)="onClick()">Click</button>
 
 <input 
   type="text" 
@@ -31,4 +35,17 @@
 
 <p><strong>{{article}}</strong></p>
 
-<input type="text" [(ngModel)]="article">
+<input type="text" [(ngModel)]="article"> -->
+
+<button (click)="displayMode = displayMode === 'flex' ? 'none' : 'flex'">toggle</button>
+
+<div [ngStyle]="{
+  display: displayMode,
+  width: '200px',
+  height: '200px',
+  borderRadius: '16px',
+  border: '1px solid #ccc',
+  marginTop: '.5rem'
+}">
+
+</div>
