@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Dynamic value';
+  article = "Initial article";
 
   // number = 42;
 
@@ -45,8 +46,7 @@ export class AppComponent {
     this.inputValue = str;
   }
 
-  onInputTitle(e: any) {
-    this.title = e.target.value;
+  onInputTitle(e: Event) {
+    this.title = (<HTMLInputElement>e.target).value;
   }
-
 }
