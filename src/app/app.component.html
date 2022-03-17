@@ -66,8 +66,16 @@
   areporotas
 </p> -->
 
-<p *ngIf="isRed; else blueP" class="red">Lorem ipsum dolor sit amet.</p>
+<!-- <p *ngIf="isRed; else blueP" class="red">Lorem ipsum dolor sit amet.</p>
 
 <ng-template #blueP>
   <p class="blue">Lorem ipsum dolor sit amet consectetur.</p>
-</ng-template>
+</ng-template> -->
+
+<button (click)="isRed = null">Set default</button>
+
+<div [ngSwitch]="isRed">
+  <p *ngSwitchCase="true" class="red">Lorem, ipsum dolor.</p>
+  <p *ngSwitchCase="false" class="blue">Lorem ipsum dolor sit.</p>
+  <p *ngSwitchDefault=""></p>
+</div>

@@ -52,5 +52,5 @@ export class AppComponent {
 
   displayMode = 'flex';
 
-  isRed = true;
+  isRed: any = true;
 }
