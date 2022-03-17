@@ -54,25 +54,27 @@ export class AppComponent {
 
   // isRed: any = true;
 
-  arr = [1, 1, 2, 3 ,5, 8, 13];
+  // arr = [1, 1, 2, 3 ,5, 8, 13];
 
-  objs = [
-    {
-      title: 'post1',
-      author: 'author1',
-      comments: [
-        {name: 'name11', text: 'text11'},
-        {name: 'name12', text: 'text12'}
-      ]
-    },
-    {
-      title: 'post2',
-      author: 'author2',
-      comments: [
-        {name: 'name21', text: 'text21'},
-        {name: 'name22', text: 'text22'},
-        {name: 'name23', text: 'text23'}
-      ]
-    }
-  ]
+  // objs = [
+  //   {
+  //     title: 'post1',
+  //     author: 'author1',
+  //     comments: [
+  //       {name: 'name11', text: 'text11'},
+  //       {name: 'name12', text: 'text12'}
+  //     ]
+  //   },
+  //   {
+  //     title: 'post2',
+  //     author: 'author2',
+  //     comments: [
+  //       {name: 'name21', text: 'text21'},
+  //       {name: 'name22', text: 'text22'},
+  //       {name: 'name23', text: 'text23'}
+  //     ]
+  //   }
+  // ]
+
+  now: Date =  new Date();
 }
